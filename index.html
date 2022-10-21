@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+ <input type="text" id="screen" class="form-control" aria-describedby="passwordHelpBlock">
+    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <br>
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" id="screen_clear" onclick="clear_display('')">clr</button></div><br>
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display(9)">9</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display(8)">8</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display(7)">7</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display('/')">/</button>
+        </div>
+       
+      <br>
+      <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display(6)"> 6</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display(5)">5</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display(4)">4</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="click_display('*')">x</button>
+        </div>
+        <br>
+     <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary" onclick="click_display(3)">3</button>
+              <button type="button" class="btn btn-outline-secondary" onclick="click_display(2)">2</button>
+              <button type="button" class="btn btn-outline-secondary" onclick="click_display(1)">1</button>
+              <button type="button" class="btn btn-outline-secondary" onclick="click_display('+')">+</button>
+     </div>
+     <br>
+    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-secondary" onclick="click_display(0)">0</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="click_display('.')">.</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="equal_click()">=</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="click_display('-')">-</button>
+        </div>
+      </div>
+    </div>
+    <script src="script_calc.js"></script>
+</body>
+</html>
